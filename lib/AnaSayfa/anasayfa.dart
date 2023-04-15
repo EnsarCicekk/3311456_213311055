@@ -34,14 +34,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<String> Ligler = [
-    "Süper Lig",
-    "La Liga",
-    "Premier Lig",
-    "Bundesliga",
-    "Seria",
-    "Ligue 1",
-  ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -53,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
     child: ListView(
       padding: EdgeInsets.zero,
       children: [
+        //Menü yazan yeri ayarladım
         DrawerHeader(
           decoration: BoxDecoration(
             color: Colors.black,
@@ -65,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ),
+        //Menü ögeleri için kullandım
         ListTile(
           title: Text('About Me',style: TextStyle(fontSize: 23),),
           trailing: Icon(Icons.arrow_forward),
