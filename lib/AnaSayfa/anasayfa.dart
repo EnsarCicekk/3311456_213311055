@@ -149,7 +149,7 @@ TextButton(onPressed: () {
          Padding(
            padding: const EdgeInsets.all(8.0),
            child: ElevatedButton(
-                  child: Text(('Geri dön'),style:TextStyle(fontSize: 20)), 
+                  child: Text(('Çıkış Yap'),style:TextStyle(fontSize: 20)), 
                       
                   onPressed: () {
                     Navigator.push(
