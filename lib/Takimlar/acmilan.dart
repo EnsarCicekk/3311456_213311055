@@ -10,6 +10,8 @@ class acmilan extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+            debugShowCheckedModeBanner: false,
+
       title: 'Material App',
       home: Scaffold(
         body: Stack(

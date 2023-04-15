@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
     
       theme: ThemeData(
         primarySwatch: Colors.blueGrey
@@ -59,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ),
-        //Menü ögeleri için kullandım
+        //Menü ögeleri için
         ListTile(
           title: Text('About Me',style: TextStyle(fontSize: 23),),
           trailing: Icon(Icons.arrow_forward),

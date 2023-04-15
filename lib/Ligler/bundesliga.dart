@@ -12,6 +12,8 @@ class bundesliga extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+            debugShowCheckedModeBanner: false,
+
       title: 'Material App',
       home: Scaffold(
         backgroundColor: Colors.white,

@@ -8,6 +8,8 @@ class Login extends StatelessWidget {
 @override
 Widget build(BuildContext context) {
 return MaterialApp(
+  debugShowCheckedModeBanner: false,
+  //Arka Plan
    theme: ThemeData(brightness: Brightness.light),
    home: Scaffold(
    body: ListView(
@@ -22,6 +24,7 @@ image: AssetImage('assets/messi.jpeg'),
 fit: BoxFit.cover,
 ),
 ),
+//Login Girişi
       child: Column(
             children: [
            Container(
@@ -52,6 +55,7 @@ style: TextStyle(color: Colors.white),
 ],
 ),
 ),
+//Futbol Yaşam Biçimidir Yazısı
     Container(
    child: Row(
   crossAxisAlignment: CrossAxisAlignment.start,
@@ -82,6 +86,7 @@ Text(
 ],
 ),
 ),
+//Premier logosu
          Padding(
     padding: const EdgeInsets.all(40.0),
           child: Container(
@@ -99,6 +104,7 @@ Text(
 ],
 ),
 ),
+//Login Butonu İf sorgusu
        ElevatedButton(
 child: Text('Login'),
      onPressed: () {
@@ -111,8 +117,8 @@ if (emailController.text == 'ensar' && passwordController.text == 'ensar') {
 showDialog(
 context: context,
     builder: (_) => AlertDialog(
-title: Text('Hata'),
-     content: Text('Kullanıcı adı veya şifre hatalı.'),
+title: Text('Hata'),//Başlıkta hata yazıyor
+     content: Text('Kullanıcı adı veya şifre hatalı.'),//Ana metni belirttik
     actions: [
       ElevatedButton(
 child: Text('Tamam'),
